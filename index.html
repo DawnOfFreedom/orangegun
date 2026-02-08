@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrangeGun - Bitcoin L1 Trading Bot</title>
+  <meta name="description" content="The fastest Telegram trading bot for OP_NET on Bitcoin L1. Snipe, swap & trade directly from Telegram.">
+  <meta property="og:title" content="OrangeGun - Bitcoin L1 Trading Bot">
+  <meta property="og:description" content="The fastest Telegram trading bot for OP_NET on Bitcoin L1.">
+  <meta property="og:image" content="/orangegun-icon.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/orangegun-icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+  <div class="cursor-spotlight" id="spotlight"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="/orangegun-icon.png" alt="OrangeGun" class="logo-icon">
+        <div>
+          <span class="logo-text">OrangeGun</span>
+          <span class="logo-tagline">Bitcoin L1 Trading Bot</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="main">
+    <div class="hero">
+      <!-- Launch badge -->
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">Coming Soon</span>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="heading">
+        Snipe. Swap.<br>
+        <span class="heading-accent">Trade.</span>
+      </h1>
+
+      <!-- Subtext -->
+      <p class="subtext">
+        The fastest Telegram trading bot for OP_NET on Bitcoin L1
+      </p>
+
+      <!-- Email signup -->
+      <div class="signup-wrapper" id="signupWrapper">
+        <form class="signup-form" id="signupForm">
+          <input type="email" placeholder="your@email.com" required id="emailInput" class="signup-input">
+          <button type="submit" class="signup-btn" id="signupBtn">Join Waitlist</button>
+        </form>
+        <p class="signup-hint">Be first to know. No spam.</p>
+      </div>
+
+      <!-- Success state -->
+      <div class="signup-success" id="signupSuccess" style="display: none;">
+        <div class="success-icon">&#127919;</div>
+        <p class="success-title">You're on the list!</p>
+        <p class="success-sub">We'll ping you when OrangeGun is locked and loaded.</p>
+        <a href="https://x.com/OrangeGunBTC" target="_blank" rel="noopener noreferrer" class="success-link">
+          Follow @OrangeGunBTC for updates &rarr;
+        </a>
+      </div>
+
+      <!-- Feature pills -->
+      <div class="pills">
+        <span class="pill">&#9889; Instant Swaps</span>
+        <span class="pill">&#127919; Token Sniper</span>
+        <span class="pill">&#128737;&#65039; Rug Protection</span>
+        <span class="pill">&#128142; Moonbag Mode</span>
+        <span class="pill">&#8383; Native BTC</span>
+      </div>
+
+      <!-- Social -->
+      <div class="social">
+        <p class="social-label">Follow for updates</p>
+        <a href="https://x.com/OrangeGunBTC" target="_blank" rel="noopener noreferrer" class="social-card">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+          <div>
+            <span class="social-name">@OrangeGunBTC</span>
+            <span class="social-desc">Updates, launches & alpha</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Floating token cards (desktop) -->
+    <div class="floating-cards">
+      <div class="token-card token-card-1">
+        <div class="token-header">
+          <span class="token-pair">MOTO / BTC</span>
+          <span class="token-live"><span class="live-dot"></span> Live</span>
+        </div>
+        <div class="token-price">0.00000847</div>
+        <div class="token-change positive">+12.4%</div>
+      </div>
+      <div class="token-card token-card-2">
+        <div class="token-header">
+          <span class="token-pair">WBTC / MOTO</span>
+          <span class="token-live"><span class="live-dot"></span> Live</span>
+        </div>
+        <div class="token-price">118,042</div>
+        <div class="token-change positive">+5.7%</div>
+      </div>
+      <div class="token-card token-card-3">
+        <div class="token-header">
+          <span class="token-pair">PILL / BTC</span>
+          <span class="token-live"><span class="live-dot"></span> Live</span>
+        </div>
+        <div class="token-price">0.00000312</div>
+        <div class="token-change negative">-3.2%</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 OrangeGun. Built for <a href="https://opnet.org" target="_blank" rel="noopener noreferrer">OP_NET</a>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
