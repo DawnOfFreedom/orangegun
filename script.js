@@ -30,7 +30,7 @@ form.addEventListener('submit', async (e) => {
   if (!email) return;
 
   signupBtn.disabled = true;
-  signupBtn.textContent = 'Joining...';
+  signupBtn.textContent = 'Submitting...';
 
   try {
     const formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdk2U4pausOApGy_wkL8xfYLQjHWv579g-6gnTJ1ogRspThxQ/formResponse';
@@ -43,7 +43,7 @@ form.addEventListener('submit', async (e) => {
   } catch (err) {
     // Error fallback
     signupBtn.disabled = false;
-    signupBtn.textContent = 'Join Waitlist';
+    signupBtn.textContent = 'Get Notified';
 
     const hint = document.querySelector('.signup-hint');
     hint.textContent = 'Something went wrong. Try again or DM @OrangeGunBTC.';
